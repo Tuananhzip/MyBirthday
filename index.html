@@ -666,20 +666,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
 
 <script>
-	day = 20; month = 8-1; year = 2025;
-	hour = 18; minute = 0;
-	var d = new Date(year, month, day, hour, minute, 0, 0);
-
 	// default example
 	simplyCountdown('.simply-countdown-wedding', {
-		year: d.getFullYear(),
-		month: d.getMonth() + 1,
-		day: d.getDate(),
-		hour: d.getHours(),
-		minutes: 0, // Default is 0 [0-59] integer
-		seconds: 0, // Default is 0 [0-59] integer
-		countUp: true
-		// enableUtc: true
+		year: 2025,
+		month: 8,
+		day: 20,
+		hours: 0,
+		minutes: 0,
+		seconds: 0,
+		enableUtc: false
 	});
 
 	//jQuery example
